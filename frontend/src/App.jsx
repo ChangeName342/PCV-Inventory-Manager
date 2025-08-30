@@ -1,4 +1,16 @@
+import { useState, useEffect } from "react";
+import axios from "axios";
+
 function App() {
+  const fetchApi = async () => {
+    const response = await axios.get("http://localhost:8080/api");
+    console.log(response.data.fruits);
+  };
+
+  useEffect(() => {
+    fetchApi();
+  }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-800 via-indigo-700 to-purple-600 flex items-center justify-center px-4">
       <div className="bg-white rounded-3xl shadow-2xl w-full max-w-md p-10 relative z-10">
