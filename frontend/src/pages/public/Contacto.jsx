@@ -29,9 +29,15 @@ function Contacto() {
                 <Link to="/contacto" className="hover:text-green-600 transition-colors">Contacto</Link>
               </li>
             </ul>
-            <button className="px-4 py-2 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg shadow-md transition transform hover:scale-105">
-              Login Administrador
-            </button>
+            {/* Botón Administrador abre nueva pestaña */}
+            <a
+              href="/login"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg shadow-md transition transform hover:scale-105"
+            >
+              Administrador
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -49,19 +55,18 @@ function Contacto() {
         {isMenuOpen && (
           <div className="md:hidden bg-white/95 backdrop-blur-md shadow-md px-6 py-4">
             <ul className="flex flex-col gap-4 text-black font-semibold">
+              <li><Link to="/" className="hover:text-green-600 transition-colors">Inicio</Link></li>
+              <li><Link to="/valores" className="hover:text-green-600 transition-colors">Valores</Link></li>
+              <li><Link to="/contacto" className="hover:text-green-600 transition-colors">Contacto</Link></li>
               <li>
-                <Link to="/" className="hover:text-green-600 transition-colors">Inicio</Link>
-              </li>
-              <li>
-                <Link to="/valores" className="hover:text-green-600 transition-colors">Valores</Link>
-              </li>
-              <li>
-                <Link to="/contacto" className="hover:text-green-600 transition-colors">Contacto</Link>
-              </li>
-              <li>
-                <button className="w-full px-4 py-2 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg shadow-md transition transform hover:scale-105">
-                  Login Administrador
-                </button>
+                <a
+                  href="/login"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full px-4 py-2 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg shadow-md transition transform hover:scale-105"
+                >
+                  Administrador
+                </a>
               </li>
             </ul>
           </div>
@@ -124,4 +129,5 @@ function Contacto() {
 }
 
 export default Contacto;
+
 
