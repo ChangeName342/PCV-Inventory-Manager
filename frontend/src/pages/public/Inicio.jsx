@@ -163,7 +163,8 @@ function Inicio() {
       <footer className="bg-gray-900 text-white py-12 mt-12">
         <div className="max-w-7xl mx-auto px-6 text-center space-y-2">
           <p>© 2025 PCV Inventory Manager. Todos los derechos reservados.</p>
-          <p>Dirección: Esmeralda Nº80, Corral-Los Ríos</p>
+          <p>Dirección sede Central: Esmeralda Nº80, Corral-Los Ríos</p>
+          <p>Dirección Astillero: Arica 2335-2499, Valdivia, Los Ríos</p>
           <p>Teléfono: +56 63 247 1239 | FAX: +56 63 247 1239</p>
           <p>
             Email:{" "}
